@@ -264,35 +264,74 @@ export default function App() {
                 right: "-40px",
               }}
             />
+<div
+  style={{
+    marginTop: "34px",
+    position: "relative",
+    borderRadius: "28px",
+    overflow: "hidden",
+    height: "320px",
+    background: "#EAF4F8",
+  }}
+>
+  <img
+    src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1600&auto=format&fit=crop"
+    alt="Healthcare Team"
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+    }}
+  />
 
-            <div
-              style={{
-                position: "absolute",
-                bottom: "30px",
-                left: "30px",
-                color: "white",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: "14px",
-                  opacity: 0.7,
-                  marginBottom: "8px",
-                }}
-              >
-                ACTIVE ROUTING ENGINE
-              </div>
+  <div
+    style={{
+      position: "absolute",
+      inset: 0,
+      background:
+        "linear-gradient(to top, rgba(11,27,77,0.72), rgba(11,27,77,0.12))",
+    }}
+  />
 
-              <div
-                style={{
-                  fontSize: "42px",
-                  fontWeight: 800,
-                }}
-              >
-                LIVE
-              </div>
-            </div>
-          </div>
+  <div
+    style={{
+      position: "absolute",
+      bottom: "24px",
+      left: "24px",
+      right: "24px",
+      background: "rgba(255,255,255,0.92)",
+      backdropFilter: "blur(12px)",
+      borderRadius: "20px",
+      padding: "20px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+    }}
+  >
+    <div
+      style={{
+        fontSize: "13px",
+        fontWeight: 700,
+        color: "#11C5D9",
+        letterSpacing: "1px",
+        marginBottom: "10px",
+        textTransform: "uppercase",
+      }}
+    >
+      Live Patient Coordination
+    </div>
+
+    <div
+      style={{
+        fontSize: "20px",
+        fontWeight: 700,
+        color: "#0B1B4D",
+        lineHeight: "1.4",
+      }}
+    >
+      Helping care teams route patients faster,
+      reduce delays, and improve operational visibility.
+    </div>
+  </div>
+</div>
         </div>
       </section>
 
