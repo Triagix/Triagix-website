@@ -7,68 +7,58 @@ export default function App() {
         background: "#F7F9FC",
         minHeight: "100vh",
         fontFamily: "Inter, sans-serif",
-        color: "#0B1B4D",
+        color: "#081B4D",
       }}
     >
       {/* NAVBAR */}
-<nav
-  style={{
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "28px 80px",
-    background: "white",
-    position: "sticky",
-    top: 0,
-    zIndex: 100,
-  }}
->
-<div
-  style={{
-    display: "flex",
-    alignItems: "center",
-    gap: "140px",
-  }}
->
-  style={{
-    display: "flex",
-    alignItems: "center",
-    gap: "140px",
-  }}
->
-    borderRadius: "14px",
-    background: "#F3F6FB",
-    border: "2px solid #11C5D9",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    color: "#0B1B4D",
-    fontWeight: "800",
-    fontSize: "22px",
-  }}
->
-  +
-</div>
+      <nav
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "24px 80px",
+          background: "white",
+          borderBottom: "1px solid #E5EAF2",
+          position: "sticky",
+          top: 0,
+          zIndex: 100,
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "14px",
+          }}
+        >
+          <img
+            src="https://i.imgur.com/5vQzYkD.png"
+            alt="Triagix"
+            style={{
+              width: "52px",
+              height: "52px",
+              borderRadius: "14px",
+            }}
+          />
 
           <div
             style={{
               fontSize: "34px",
               fontWeight: 800,
-              letterSpacing: "-2px",
+              letterSpacing: "-1px",
             }}
           >
             TRIAGIX
-            <span style={{ color: "#11C5D9" }}>.</span>
+            <span style={{ color: "#13B5D1" }}>.</span>
           </div>
         </div>
 
         <div
           style={{
             display: "flex",
-            gap: "42px",
-            color: "#5B6B88",
+            gap: "40px",
+            color: "#5B6478",
             fontWeight: 500,
-            fontSize: "16px",
           }}
         >
           <span>Platform</span>
@@ -79,91 +69,84 @@ export default function App() {
 
         <button
           style={{
-            background: "#0B1B4D",
+            background: "#081B4D",
             color: "white",
             border: "none",
-            padding: "16px 28px",
+            padding: "14px 28px",
             borderRadius: "14px",
             fontWeight: 600,
             cursor: "pointer",
-            fontSize: "15px",
           }}
         >
           Request Demo
         </button>
-          </div>
-  </div>
-</nav>
+      </nav>
 
-{/* HERO */}
-<section>
+      {/* HERO */}
+      <section
         style={{
+          padding: "80px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "120px 80px",
           gap: "80px",
-          flexWrap: "wrap",
         }}
       >
-        <div
-          style={{
-            flex: 1,
-            minWidth: "320px",
-            maxWidth: "700px",
-          }}
-        >
+        {/* LEFT */}
+        <div style={{ maxWidth: "620px" }}>
           <div
             style={{
-              color: "#11C5D9",
-              textTransform: "uppercase",
-              letterSpacing: "1px",
+              display: "inline-block",
+              padding: "10px 18px",
+              borderRadius: "999px",
+              background: "#E8FBFF",
+              color: "#13B5D1",
+              fontSize: "13px",
               fontWeight: 700,
-              marginBottom: "24px",
-              fontSize: "14px",
+              letterSpacing: "1px",
+              marginBottom: "28px",
             }}
           >
-            Intelligent Healthcare Operations
+            AI-POWERED CARE ROUTING PLATFORM
           </div>
 
           <h1
             style={{
-              fontSize: "78px",
-              lineHeight: "0.95",
-              letterSpacing: "-4px",
-              marginBottom: "34px",
-              fontWeight: 800,
+              fontSize: "72px",
+              lineHeight: "78px",
+              margin: 0,
+              letterSpacing: "-3px",
             }}
           >
-            Route Every Patient
-            <br />
-            To The Right Care Team.
+            Intelligent care routing for{" "}
+            <span style={{ color: "#13B5D1" }}>
+              better patient outcomes.
+            </span>
           </h1>
 
           <p
             style={{
+              marginTop: "30px",
+              color: "#5B6478",
               fontSize: "22px",
-              lineHeight: "1.7",
-              color: "#5B6B88",
-              marginBottom: "42px",
-              maxWidth: "620px",
+              lineHeight: "38px",
             }}
           >
-            AI-powered intake, triage, and intelligent routing
-            designed for modern healthcare contact centers and
-            patient access operations.
+            Triagix orchestrates patient interactions across voice,
+            chat, and digital channels — connecting people to the
+            right care team at the right time.
           </p>
 
           <div
             style={{
               display: "flex",
-              gap: "18px",
-              flexWrap: "wrap",
+              gap: "20px",
+              marginTop: "40px",
             }}
           >
             <button
               style={{
-                background: "#11C5D9",
+                background: "#081B4D",
                 color: "white",
                 border: "none",
                 padding: "18px 34px",
@@ -173,14 +156,14 @@ export default function App() {
                 cursor: "pointer",
               }}
             >
-              Request Demo
+              Request a Demo
             </button>
 
             <button
               style={{
                 background: "white",
-                color: "#0B1B4D",
-                border: "1px solid #D8E1EE",
+                color: "#081B4D",
+                border: "1px solid #D7DFEA",
                 padding: "18px 34px",
                 borderRadius: "16px",
                 fontWeight: 700,
@@ -191,221 +174,89 @@ export default function App() {
               Explore Platform
             </button>
           </div>
+
+          {/* FEATURE TAGS */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "18px",
+              marginTop: "50px",
+              color: "#5B6478",
+              fontWeight: 600,
+            }}
+          >
+            <span>HIPAA Ready</span>
+            <span>SOC 2 Ready</span>
+            <span>Enterprise Security</span>
+            <span>EHR Integrations</span>
+          </div>
         </div>
 
-        {/* RIGHT SIDE CARD */}
-
+        {/* RIGHT IMAGE */}
         <div
           style={{
-            width: "460px",
-            background: "white",
-            borderRadius: "30px",
-            padding: "40px",
-            boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
+            flex: 1,
+            position: "relative",
           }}
         >
+          <img
+            src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop"
+            alt="Healthcare team"
+            style={{
+              width: "100%",
+              borderRadius: "28px",
+              objectFit: "cover",
+              boxShadow: "0 30px 60px rgba(0,0,0,0.12)",
+            }}
+          />
+
+          {/* FLOATING CARD */}
           <div
             style={{
-              fontSize: "26px",
-              fontWeight: 700,
-              marginBottom: "30px",
+              position: "absolute",
+              top: "40px",
+              left: "-40px",
+              background: "white",
+              padding: "20px",
+              borderRadius: "20px",
+              boxShadow: "0 20px 40px rgba(0,0,0,0.12)",
+              width: "240px",
             }}
           >
-            Operational Visibility
-          </div>
-
-          {[
-            ["Routing Accuracy", "98.2%"],
-            ["Avg Queue Time", "2m 14s"],
-            ["Escalation Detection", "Live"],
-            ["Care Path Matching", "Active"],
-          ].map((item, index) => (
             <div
-              key={index}
               style={{
-                display: "flex",
-                justifyContent: "space-between",
-                padding: "18px 0",
-                borderBottom:
-                  index !== 3 ? "1px solid #EEF2F7" : "none",
+                fontSize: "12px",
+                color: "#8B96A8",
+                marginBottom: "10px",
+                fontWeight: 700,
               }}
             >
-              <span
-                style={{
-                  color: "#5B6B88",
-                }}
-              >
-                {item[0]}
-              </span>
-
-              <strong
-                style={{
-                  color:
-                    item[1] === "Live" || item[1] === "Active"
-                      ? "#11C5D9"
-                      : "#0B1B4D",
-                }}
-              >
-                {item[1]}
-              </strong>
+              AI ROUTING STATUS
             </div>
-          ))}
 
-          <div
-            style={{
-              marginTop: "34px",
-              height: "220px",
-              borderRadius: "24px",
-              background:
-                "linear-gradient(135deg,#0B1B4D,#123C8D)",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
             <div
               style={{
-                position: "absolute",
-                width: "240px",
-                height: "240px",
-                borderRadius: "50%",
-                background: "rgba(17,197,217,0.15)",
-                top: "-40px",
-                right: "-40px",
+                fontSize: "26px",
+                fontWeight: 800,
+                color: "#081B4D",
               }}
-            />
-<div
-  style={{
-    marginTop: "34px",
-    position: "relative",
-    borderRadius: "28px",
-    overflow: "hidden",
-    height: "320px",
-    background: "#EAF4F8",
-  }}
->
-  <img
-    src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1600&auto=format&fit=crop"
-    alt="Healthcare Team"
-    style={{
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-    }}
-  />
+            >
+              96.3%
+            </div>
 
-  <div
-    style={{
-      position: "absolute",
-      inset: 0,
-      background:
-        "linear-gradient(to top, rgba(11,27,77,0.72), rgba(11,27,77,0.12))",
-    }}
-  />
-
-  <div
-    style={{
-      position: "absolute",
-      bottom: "24px",
-      left: "24px",
-      right: "24px",
-      background: "rgba(255,255,255,0.92)",
-      backdropFilter: "blur(12px)",
-      borderRadius: "20px",
-      padding: "20px",
-      boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-    }}
-  >
-    <div
-      style={{
-        fontSize: "13px",
-        fontWeight: 700,
-        color: "#11C5D9",
-        letterSpacing: "1px",
-        marginBottom: "10px",
-        textTransform: "uppercase",
-      }}
-    >
-      Live Patient Coordination
-    </div>
-
-    <div
-      style={{
-        fontSize: "20px",
-        fontWeight: 700,
-        color: "#0B1B4D",
-        lineHeight: "1.4",
-      }}
-    >
-      Helping care teams route patients faster,
-      reduce delays, and improve operational visibility.
-    </div>
-  </div>
-</div>
+            <div
+              style={{
+                marginTop: "8px",
+                color: "#13B5D1",
+                fontWeight: 600,
+              }}
+            >
+              Routing Accuracy Active
+            </div>
+          </div>
         </div>
       </section>
-
-      {/* FEATURE CARDS */}
-
-      <section
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
-          gap: "28px",
-          padding: "0 80px 120px",
-        }}
-      >
-        {[
-          {
-            title: "Intelligent Intake",
-            text:
-              "AI-assisted workflows streamline patient intake and triage operations.",
-          },
-          {
-            title: "Smart Routing",
-            text:
-              "Connect patients to the right department and care pathway faster.",
-          },
-          {
-            title: "Operational Visibility",
-            text:
-              "Real-time insights across queues, escalations, and staffing.",
-          },
-        ].map((item, index) => (
-          <div
-            key={index}
-            style={{
-              background: "white",
-              borderRadius: "24px",
-              padding: "40px",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.04)",
-            }}
-          >
-            <h3
-              style={{
-                fontSize: "24px",
-                marginBottom: "18px",
-              }}
-            >
-              {item.title}
-            </h3>
-
-            <p
-              style={{
-                color: "#5B6B88",
-                lineHeight: "1.8",
-                fontSize: "17px",
-              }}
-            >
-              {item.text}
-            </p>
-          </div>
-        ))}
-      </section>
-        ))}
     </div>
-  </section>
-</div>
-);
-}
   );
 }
