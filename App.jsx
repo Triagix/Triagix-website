@@ -31,16 +31,23 @@ export default function App() {
             alignItems: "center",
             gap: "14px",
           }}
-        >
-          <img
-            src="https://i.imgur.com/BvGZpGx.png"
-            alt="Triagix"
-            style={{
-              width: "48px",
-              height: "48px",
-              borderRadius: "14px",
-            }}
-          />
+        <div
+  style={{
+    width: "48px",
+    height: "48px",
+    borderRadius: "14px",
+    background: "#F3F6FB",
+    border: "2px solid #11C5D9",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "#0B1B4D",
+    fontWeight: "800",
+    fontSize: "22px",
+  }}
+>
+  +
+</div>
 
           <div
             style={{
