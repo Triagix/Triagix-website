@@ -11,20 +11,25 @@ export default function App() {
       }}
     >
       {/* NAVBAR */}
-
-      <nav
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "28px 80px",
-          background: "white",
-          borderBottom: "1px solid #EEF2F7",
-          position: "sticky",
-          top: 0,
-          zIndex: 100,
-        }}
+<nav
+  style={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "28px 80px",
+    background: "white",
+    position: "sticky",
+    top: 0,
+    zIndex: 100,
+  }}
+>
 <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "140px",
+  }}
+>
   style={{
     display: "flex",
     alignItems: "center",
