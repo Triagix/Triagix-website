@@ -399,6 +399,11 @@ export default function App() {
           </div>
         ))}
       </section>
+        ))}
     </div>
+  </section>
+</div>
+);
+}
   );
 }
