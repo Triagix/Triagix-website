@@ -85,12 +85,12 @@ export default function App() {
           h1 { letter-spacing: -2px; }
           .visual { min-height: 440px; }
           .visual img { min-height: 440px; }
-        }
-      `}</style>
-
-      <nav className="nav">
-        <div className="brand">
-          <div className="mark"><div className="pulse" /></div>
+       <div className="links">
+  <a href="#platform">Platform</a>
+  <a href="#solutions">Solutions</a>
+  <a href="#security">Security</a>
+  <a href="#about">About</a>
+</div>
           <div>TRIAGIX<span className="dot">.</span></div>
         </div>
 
