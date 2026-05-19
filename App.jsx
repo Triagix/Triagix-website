@@ -24,17 +24,13 @@ export default function App() {
           top: 0,
           zIndex: 100,
         }}
-      >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "14px",
-          }}
-        <div
+<div
   style={{
-    width: "48px",
-    height: "48px",
+    display: "flex",
+    alignItems: "center",
+    gap: "140px",
+  }}
+>
     borderRadius: "14px",
     background: "#F3F6FB",
     border: "2px solid #11C5D9",
