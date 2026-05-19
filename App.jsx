@@ -91,11 +91,12 @@ export default function App() {
         >
           Request Demo
         </button>
-      </nav>
+          </div>
+  </div>
+</nav>
 
-      {/* HERO */}
-
-      <section
+{/* HERO */}
+<section>
         style={{
           display: "flex",
           justifyContent: "space-between",
